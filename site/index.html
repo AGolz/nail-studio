@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="hy">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#3f4b36">
+  <meta name="description" content="NARA — մատնահարդարման, պեդիկյուրի և հոնքերի խնամքի ատելիե Երևանում։">
+  <title>NARA — Nail &amp; Brow Atelier · Երևան</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Noto+Sans+Armenian:wght@400;500;600;700&family=Noto+Serif+Armenian:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="booking-data.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body id="top">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="index.html" aria-label="NARA home">NARA<span>·</span></a>
+      <nav class="main-nav" id="mainNav" data-nav-label>
+        <a href="#services" data-copy="nav.0"></a>
+        <a href="#artists" data-copy="nav.1"></a>
+        <a href="#work" data-copy="nav.2"></a>
+        <a href="#studio" data-copy="nav.3"></a>
+      </nav>
+      <div class="header-actions">
+        <a class="header-book" href="#booking" data-copy="book"></a>
+        <div class="language-switch" role="group" data-language-label>
+          <a href="index.html" lang="hy" aria-current="page">HY</a>
+          <a href="ru.html" lang="ru">RU</a>
+          <a href="en.html" lang="en">EN</a>
+        </div>
+        <button class="menu-toggle" type="button" aria-controls="mainNav" aria-expanded="false" data-menu-toggle>
+          <span></span><span></span><span class="visually-hidden" data-copy="menu"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="heroTitle">
+      <img class="hero-image" src="assets/manicure-01.jpg" alt="Nail art in deep glossy tones" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <p class="eyebrow" data-copy="heroKicker"></p>
+        <h1 id="heroTitle" data-copy-html="heroTitle"></h1>
+        <p class="hero-description" data-copy="heroText"></p>
+        <div class="hero-actions"><a class="button button-accent" href="#booking" data-copy="heroButton"></a></div>
+      </div>
+    </section>
+
+    <section class="services-section section-pad" id="services" aria-labelledby="servicesTitle">
+      <div class="section-heading section-heading-split">
+        <div>
+          <p class="eyebrow eyebrow-dark" data-copy="servicesKicker"></p>
+          <h2 class="section-title" id="servicesTitle" data-copy="servicesTitle"></h2>
+        </div>
+        <p class="section-intro" data-copy="servicesText"></p>
+      </div>
+      <div class="service-list" id="serviceList"></div>
+    </section>
+
+    <section class="artists-section section-pad" id="artists" aria-labelledby="artistsTitle">
+      <div class="section-heading">
+        <p class="eyebrow eyebrow-dark" data-copy="teamKicker"></p>
+        <div class="section-title-row">
+          <h2 class="section-title" id="artistsTitle" data-copy="teamTitle"></h2>
+          <p class="section-note" data-copy="teamNote"></p>
+        </div>
+      </div>
+      <div class="artist-grid" id="artistGrid"></div>
+    </section>
+
+    <section class="gallery-section section-pad" id="work" aria-labelledby="galleryTitle">
+      <div class="section-heading">
+        <p class="eyebrow eyebrow-dark" data-copy="galleryKicker"></p>
+        <div class="section-title-row">
+          <h2 class="section-title" id="galleryTitle" data-copy="galleryTitle"></h2>
+          <p class="section-note" data-copy="galleryNote"></p>
+        </div>
+      </div>
+      <div class="gallery-filters" role="group" data-filter-label>
+        <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true" data-copy="filterAll"></button>
+        <button class="filter-button" type="button" data-filter="manicure" aria-pressed="false" data-copy="filterMani"></button>
+        <button class="filter-button" type="button" data-filter="pedicure" aria-pressed="false" data-copy="filterPedi"></button>
+        <button class="filter-button" type="button" data-filter="brows" aria-pressed="false" data-copy="filterBrows"></button>
+      </div>
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </section>
+
+    <section class="studio-section" id="studio" aria-labelledby="studioTitle">
+      <div class="studio-image-wrap">
+        <img src="assets/studio-interior.png" alt="Ստուդիայի ինտերիերի պատկերացում՝ դեմո նախագծի համար" loading="lazy">
+        <span class="photo-credit">AI ՊԱՏԿԵՐԱՑՈՒՄ · ԴԵՄՈ</span>
+      </div>
+      <div class="studio-copy">
+        <p class="eyebrow" data-copy="studioKicker"></p>
+        <h2 id="studioTitle" data-copy="studioTitle"></h2>
+        <p class="studio-description" data-copy="studioText"></p>
+        <div class="studio-principles">
+          <article>
+            <span class="principle-number">01</span>
+            <div><h3 data-copy="sterileTitle"></h3><p data-copy="sterileText"></p></div>
+          </article>
+          <article>
+            <span class="principle-number">02</span>
+            <div><h3 data-copy="materialsTitle"></h3><p data-copy="materialsText"></p></div>
+          </article>
+        </div>
+        <p class="studio-disclaimer" data-copy="studioTag"></p>
+      </div>
+    </section>
+
+    <section class="faq-section section-pad" id="faq" aria-labelledby="faqTitle">
+      <div class="faq-heading">
+        <p class="eyebrow eyebrow-dark" data-copy="faqKicker"></p>
+        <h2 class="section-title" id="faqTitle" data-copy="faqTitle"></h2>
+      </div>
+      <div class="faq-list" id="faqList"></div>
+    </section>
+
+    <section class="booking-section section-pad" id="booking" aria-labelledby="bookingTitle">
+      <div class="booking-heading">
+        <p class="eyebrow" data-copy="booking.kicker"></p>
+        <h2 id="bookingTitle" data-copy="booking.title"></h2>
+        <p data-copy="booking.intro"></p>
+      </div>
+      <div id="bookingWizard" class="booking-wizard" data-endpoint="/.netlify/functions/booking"></div>
+      <p class="booking-demo" data-copy="booking.demo"></p>
+    </section>
+
+    <section class="contact-section section-pad" id="contact" aria-labelledby="contactTitle">
+      <div class="contact-main">
+        <p class="eyebrow eyebrow-dark" data-copy="contactKicker"></p>
+        <h2 class="section-title" id="contactTitle" data-copy="contactTitle"></h2>
+        <p class="demo-notice" data-copy="demoNotice"></p>
+      </div>
+      <div class="contact-details">
+        <div><span data-copy="addressLabel"></span><p data-copy="addressValue"></p></div>
+        <div><span data-copy="hoursLabel"></span><p data-copy="hoursValue"></p></div>
+        <div><span data-copy="phoneLabel"></span><p data-copy="phoneValue"></p></div>
+        <div class="social-links">
+          <span data-copy="socialLabel"></span>
+          <p><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a><a href="https://www.tiktok.com/" target="_blank" rel="noreferrer">TikTok ↗</a></p>
+          <small data-copy="socialNote"></small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark" href="index.html">NARA<span>·</span></a>
+    <p data-copy="footerLine"></p>
+    <a href="#top" data-copy="backToTop"></a>
+  </footer>
+  <a class="mobile-book" href="#booking" data-copy="book"></a>
+</body>
+</html>
