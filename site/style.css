@@ -95,7 +95,7 @@ button { color: inherit; }
   border-radius: 4px;
   transition: color 160ms ease, background 160ms ease;
 }
-.language-switch a[aria-current="page"] { color: var(--white); background: var(--ink); }
+.language-switch a[aria-current="page"] { color: var(--ink); background: var(--accent); }
 .header-book {
   display: inline-flex;
   min-height: 42px;
