@@ -518,3 +518,10 @@ main > section:not(.hero) .eyebrow { display: none; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
 }
+
+/* Keep Russian service cards equal even when a title wraps. */
+:lang(ru) .service-choice > span { height: 100%; }
+@media (min-width: 761px) {
+  :lang(ru) .service-choice-list { grid-auto-rows: 1fr; }
+  :lang(ru) .service-choice .choice-meta { margin-top: auto; }
+}
